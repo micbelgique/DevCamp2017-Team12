@@ -19,6 +19,13 @@ namespace UXDivers.Artina.Grial
 			moi.nom = "Omelcenco";
 			moi.prenom = "Denis";
 			moi.dateNaissance = new DateTime(1990, 12, 9);
+
+			moi.vehicules.Add(maVoiture);
+
+			AutoritesPublique police = new AutoritesPublique();
+			police.nom = "Police";
+
+
 		}
 	}
 }

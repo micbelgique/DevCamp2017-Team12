@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 namespace UXDivers.Artina.Grial
 {
 	public class Personne
@@ -6,6 +7,11 @@ namespace UXDivers.Artina.Grial
 		public string nom{ get; set; }
 		public string prenom{ get; set; }
 		public DateTime dateNaissance{ get; set; }
-		public Vehicule[] vehicules { get; set; }
+		public List<Vehicule> vehicules { get; set; }
+
+		public Personne()
+		{
+			vehicules = new List<Vehicule>();
+		}
 	}
 }

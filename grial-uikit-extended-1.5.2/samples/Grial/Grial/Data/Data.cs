@@ -8,12 +8,12 @@ namespace UXDivers.Artina.Grial
 			Vehicule maVoiture = new Vehicule();
 			maVoiture.vehiculeID = 1;
 			maVoiture.numImmatriculation = "1-ERR-404";
-			maVoiture.datePremiereImmatriculation = new DateTime(1921,09,1);
+			maVoiture.datePremiereImmatriculation = new DateTime(1921, 09, 1);
 			maVoiture.constructeur = "Ford";
 			maVoiture.cylindree = 8;
 			maVoiture.puissanceMaximale = 589;
 			maVoiture.typeDeCarburant = "essances";
-			maVoiture.annéeDeConstruction = new DateTime(1920,1,1);
+			maVoiture.annéeDeConstruction = new DateTime(1920, 1, 1);
 
 			Personne moi = new Personne();
 			moi.nom = "Omelcenco";
@@ -25,6 +25,9 @@ namespace UXDivers.Artina.Grial
 			AutoritesPublique police = new AutoritesPublique();
 			police.nom = "Police";
 
+			maVoiture.consulterProprio(new DemandeInfo(police, "Le véhicule était sur deux roues"));
+
+			//			var xx = moi.consulterVehicules(new DemandeInfo(police, "Le véhicule était sur deux roues"));
 
 		}
 	}

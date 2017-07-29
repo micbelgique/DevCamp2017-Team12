@@ -10,6 +10,13 @@ namespace UXDivers.Artina.Grial
 		public int cylindree { get; set; }
 		public int puissanceMaximale { get; set; }
 		public string typeDeCarburant { get; set; }
-		public DateTime annéeDeConstruction { get; set;}
+		public DateTime annéeDeConstruction { get; set; }
+		public Personne proprio { get; set; }
+
+		public Personne consulterProprio(DemandeInfo demande)
+		{
+			proprio.consulter(demande);
+			return proprio;
+		}
 	}
 }

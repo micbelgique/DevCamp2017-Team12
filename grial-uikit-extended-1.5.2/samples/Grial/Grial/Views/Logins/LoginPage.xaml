@@ -7,7 +7,7 @@
 	xmlns:artina="clr-namespace:UXDivers.Artina.Shared;assembly=UXDivers.Artina.Shared"
 	xmlns:commonViews="clr-namespace:UXDivers.Artina.Grial;assembly=UXDivers.Artina.Grial"
 	BackgroundColor="White"
-	BackgroundImage="{ StaticResource SignUpBackgroundImage }"
+    
 	 >
 
 	<ScrollView>
@@ -19,15 +19,18 @@
 			VerticalOptions="FillAndExpand" >
 
 			<Grid.RowDefinitions>
-				<RowDefinition Height="100" />
+				<RowDefinition Height="200" />
 				<RowDefinition Height="*" />
 				<RowDefinition Height="100" />
 			</Grid.RowDefinitions>
 
 			<!-- LOGO -->
-            <commonViews:BrandBlock 
+            <Image Source="{ StaticResource IDMeLogo }"
 				Grid.Row="0"
-			/>
+                HorizontalOptions="Center"
+                VerticalOptions="Center"
+                Margin="60,80,60,0"
+            />
 
             <!---FIELDS CONTAINER-->
 			<Grid 

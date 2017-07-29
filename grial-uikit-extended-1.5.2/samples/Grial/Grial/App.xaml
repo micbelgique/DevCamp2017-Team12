@@ -58,8 +58,8 @@
 
             <Color x:Key="LabelButtonColor">#ffffff</Color>
 
-            <Color x:Key="PlaceholderColor">#22ffffff</Color>
-            <Color x:Key="PlaceholderColorEntry">#77FFFFFF</Color>
+            <Color x:Key="PlaceholderColor">#9BAFC1FF</Color>
+            <Color x:Key="PlaceholderColorEntry">#9BAFC1FF</Color>
             <Color x:Key="MainMenuBackgroundColor">#283441</Color>
             <Color x:Key="MainMenuSeparatorColor">#253642</Color>
             <Color x:Key="ListViewSeparatorColor">#77CCCCCC</Color>
@@ -97,6 +97,8 @@
             <!-- STATIC IMAGES -->
             <FileImageSource x:Key="HamburguerIcon" File="hamburguer_icon.png" />
             <FileImageSource x:Key="WelcomeBackgroundImage" File="welcome_bg.jpg" />
+            <FileImageSource x:Key="IDMeLogo" File="IDMeLogo.png" />
+            
 
             <FileImageSource x:Key="BrandImage" File="logo.png" />
 
@@ -334,13 +336,13 @@
             </Style>
 
             <Style x:Key="LoginEntryStyle" TargetType="Entry">
-                <Setter Property="TextColor" Value="White" />
+                <Setter Property="TextColor" Value="{StaticResource AccentColor}" />
                 <Setter Property="BackgroundColor" Value="Transparent"/>
             </Style>
 
             <Style x:Key="ArtinaLoginEntryStyle" TargetType="Entry" BasedOn="{ StaticResource LoginEntryStyle }" >
                 <Setter Property="artina:EntryProperties.BorderStyle" Value="BottomLine"/>
-                <Setter Property="artina:EntryProperties.BorderColor" Value="{ StaticResource TranslucidWhite }"/>
+                <Setter Property="artina:EntryProperties.BorderColor" Value="{ StaticResource PlaceholderColorEntry }"/>
                 <Setter Property="artina:EntryProperties.PlaceholderColor" Value="{ StaticResource PlaceholderColorEntry }"/>
                 <Style.Triggers>
                     <Trigger TargetType="Entry"

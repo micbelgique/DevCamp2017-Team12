@@ -332,6 +332,7 @@
     <BundleResource Include="Resources\tabs0_icon.png" />
     <BundleResource Include="Resources\tabs0_icon%402x.png" />
     <BundleResource Include="Resources\tabs0_icon%403x.png" />
+    <BundleResource Include="Resources\IDMeLogo.png" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Grial\Grial.csproj">

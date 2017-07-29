@@ -24,6 +24,7 @@ namespace UXDivers.Artina.Grial
 		{
             //return new RootPage(true);
             return new LoginPage();
-		}
+            //return new SocialPage();
+        }
 	}
 }

@@ -70,13 +70,16 @@
 				HorizontalOptions="Fill"
 				VerticalOptions="EndAndExpand" 
 				Padding="20"
-				Grid.Row="2" >
+				Grid.Row="2">
 
 				<artina:Button
 					Style="{DynamicResource PrimaryActionButtonStyle}"
 					VerticalOptions="End"
-					Text="Login" />
-			</StackLayout>
+					Text="Login"
+                    Command="{Binding LoginCommand}"
+                   />
+
+            </StackLayout>
 
 		</Grid>
 	</ScrollView>

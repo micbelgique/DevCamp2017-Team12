@@ -1,6 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
-
+using UXDivers.Artina.Grial.ViewModel;
 using Xamarin.Forms;
 
 namespace UXDivers.Artina.Grial
@@ -11,7 +11,8 @@ namespace UXDivers.Artina.Grial
 		{
 			InitializeComponent ();
 			NavigationPage.SetHasNavigationBar(this, false);
-		}
+            this.BindingContext = new LoginViewModel();
+        }
 
 		public async void OnSignupStackTapped (object sender, EventArgs e) {
 			if (LoginPage.IsPageInNavigationStack<SignUpPage> (Navigation)) {
@@ -21,11 +22,6 @@ namespace UXDivers.Artina.Grial
 
 			var signUpPage = new SignUpPage();
 			await Navigation.PushAsync( signUpPage );
-		}
-
-		async void OnCloseButtonClicked(object sender, EventArgs args)
-		{
-			await Navigation.PopModalAsync();
 		}
 
 		public static bool IsPageInNavigationStack<TPage>(INavigation navigation) where TPage : Page {

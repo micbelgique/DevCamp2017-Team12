@@ -5,7 +5,7 @@ x:Class="UXDivers.Artina.Grial.ProductsGridPage"
 xmlns:artina="clr-namespace:UXDivers.Artina.Shared;assembly=UXDivers.Artina.Shared"
 Title="Products Grid" >
 
-	<Grid>
+    <Grid>
 		<StackLayout>
 
 				<StackLayout x:Name="EcommerceProductGridBanner" 

@@ -17,12 +17,13 @@ namespace UXDivers.Artina.Grial
 
 			_showWelcome = sayWelcome;
 
-			// Empty pages are initially set to get optimal launch experience
-			Master = new ContentPage { Title = "Artina" };
-			Detail = new NavigationPage(new ContentPage());
-		}
-			
-		public async void OnSettingsTapped( Object sender, EventArgs e ){
+            // Empty pages are initially set to get optimal launch experience
+            Master = new ContentPage { Title = "Artina" };
+
+            Detail = new NavigationPage(new ContentPage());
+        }
+
+        public async void OnSettingsTapped( Object sender, EventArgs e ){
 			await Navigation.PushAsync( new SettingsPage() );
 		}
 
@@ -35,9 +36,10 @@ namespace UXDivers.Artina.Grial
 			if (_showWelcome) {
 				_showWelcome = false;
 
-				await Navigation.PushModalAsync (new NavigationPage (new WelcomePage ()));
+                //await Navigation.PushModalAsync(new NavigationPage(new WelcomePage()));
+                await Navigation.PushModalAsync(new NavigationPage(new ProductsCarouselPage()));
 
-				await Task.Delay (500)
+                await Task.Delay (500)
 					.ContinueWith(t => NavigationService.BeginInvokeOnMainThreadAsync(InitializeMasterDetail));
 			}
 		}
@@ -59,9 +61,9 @@ namespace UXDivers.Artina.Grial
 			// "NavigationPage.SetHasNavigationBar(this, false);" when you add the page as the 
 			// root of the NavigationPage, when you are working in Android.
 			if (page is CustomNavBarPage) {
-				var navigationPage = new NavigationPage (new ContentPage());
+                var navigationPage = new NavigationPage(new ContentPage());
 
-				Detail = navigationPage;
+                Detail = navigationPage;
 
 				navigationPage.PushAsync (page, false);
 			} else {

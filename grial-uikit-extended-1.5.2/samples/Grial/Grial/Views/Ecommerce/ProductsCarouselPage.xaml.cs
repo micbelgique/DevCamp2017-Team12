@@ -23,7 +23,7 @@ namespace UXDivers.Artina.Grial
 		protected override void OnCurrentPageChanged()
 		{
 			base.OnCurrentPageChanged();
-			this.Title = CurrentPage.Title;
-		}
-	}
+            this.Title = CurrentPage.Title;
+        }
+    }
 }

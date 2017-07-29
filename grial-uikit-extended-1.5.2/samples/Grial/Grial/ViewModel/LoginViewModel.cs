@@ -19,7 +19,8 @@ namespace UXDivers.Artina.Grial.ViewModel
 
         void Login()
         {
-            Application.Current.MainPage = new ProductsCarouselPage();
+            //Application.Current.MainPage = new ProductsCarouselPage();
+            Application.Current.MainPage = new RootPage(true);
         }
     }
 }

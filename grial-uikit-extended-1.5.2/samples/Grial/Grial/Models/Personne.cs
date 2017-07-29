@@ -10,18 +10,27 @@ namespace UXDivers.Artina.Grial
 		public Statut statut { get; set; }
 		public string adresse { get; set; }
 		public DateTime dateNaissance { get; set; }
+		public Famille famille { get; set; }
 		public List<Vehicule> vehicules { get; set; }
 		public Stack<DemandeInfo> demandes { get; set; }
 		public Personne()
 		{
-			nom = "Omelcenco";
-			prenom = "Denis";
+			nom = "Bonbeur";
+			prenom = "Jean";
 			numRegistreNationnal = "90012345678";
 			statut = Statut.Marié;
 			adresse = "Avenue Léopole n°42, 1000 Bruxelles";
 			dateNaissance = new DateTime(1990, 01, 23);
 			vehicules = new List<Vehicule>();
 			demandes = new Stack<DemandeInfo>();
+			famille = new Famille();
+
+		}
+
+		public Personne(String nom, String prenom)
+		{
+			this.nom = nom;
+			this.prenom = prenom;
 		}
 
 

@@ -12,8 +12,8 @@
 	 <!--MAIN CONTEINER GRID-->
 	<Grid VerticalOptions="Fill">
 		<Grid.RowDefinitions>
-			<RowDefinition Height="40*" />
-			<RowDefinition Height="60*" />
+			<RowDefinition Height="30*" />
+			<RowDefinition Height="70*" />
 
 		</Grid.RowDefinitions>
 

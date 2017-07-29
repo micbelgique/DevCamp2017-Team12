@@ -12,6 +12,7 @@ namespace UXDivers.Artina.Grial
 			InitializeComponent ();
 
 			BindingContext = SampleData.Products[0];
+            ConsultationsList.ItemsSource = new SocialViewModel().Friends;
 		}
 			
 		private async void OnImageTapped(Object sender, EventArgs e){

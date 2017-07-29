@@ -18,7 +18,7 @@ namespace UXDivers.Artina.Grial
 			_showWelcome = sayWelcome;
 
             // Empty pages are initially set to get optimal launch experience
-            Master = new ContentPage { Title = "Artina" };
+            Master = new ContentPage { Title = " " };
 
             Detail = new NavigationPage(new ContentPage());
         }

@@ -5,15 +5,16 @@
 	x:Class="UXDivers.Artina.Grial.ProductItemViewPage"
 	xmlns:sample="clr-namespace:UXDivers.Artina.Grial;assembly=UXDivers.Artina.Grial" 
 	xmlns:artina="clr-namespace:UXDivers.Artina.Shared;assembly=UXDivers.Artina.Shared" 
+    
 	Title="{Binding Name}">
 
 
 	 <!--MAIN CONTEINER GRID-->
 	<Grid VerticalOptions="Fill">
 		<Grid.RowDefinitions>
-			<RowDefinition Height="60*" />
 			<RowDefinition Height="40*" />
-			<RowDefinition Height="60" />
+			<RowDefinition Height="60*" />
+
 		</Grid.RowDefinitions>
 
 		<!--PRODUCT IMAGE-->
@@ -55,26 +56,20 @@
 							VerticalOptions="Center">
 
 							<Label 
-								Text="Price" 
+								Text="Consultations" 
 								FontSize ="16"
 								TextColor ="{StaticResource AccentColor}"
 								FontAttributes="Bold"
 							/>
 
-							<Label
-								Grid.Column="0"
-								Text="{Binding Price}"
-								FontSize ="16"
-								FontAttributes="Bold"
-								TextColor ="{StaticResource AccentColor}"
-								/>
+					
 						</StackLayout>
 
 						<Label VerticalOptions="Center" FontSize="14" HorizontalOptions="End" Grid.Column="1" Grid.Row="0">
 							<Label.FormattedText> 
 								<FormattedString>
 								<FormattedString.Spans>
-									<Span Text="&#xf004; " ForegroundColor="{StaticResource AccentColor}" FontFamily="{x:Static artina:FontAwesome.FontName}" />
+									<Span Text="&#xf06e; " ForegroundColor="{StaticResource AccentColor}" FontFamily="{x:Static artina:FontAwesome.FontName}" />
 								</FormattedString.Spans>
 								</FormattedString>
 							</Label.FormattedText>
@@ -88,41 +83,28 @@
 
 				<!---DESCRIPTION -->
 				
-				<StackLayout Padding="20,0,20,0" >
+				<StackLayout Padding="0,0,0,0" >
 					
-					<Label 
-						 Text="{Binding Name}"
-						 FontSize ="20"
-						 FontAttributes="Bold"
-						HorizontalOptions="Fill"
-						TextColor="{StaticResource ComplementColor}"
-						/>
+                    <ListView BackgroundColor="White"
+                          
+                            RowHeight="66" 
+                            x:Name="ConsultationsList"
+                             >
 
-					<ScrollView>
-						<Label 
-							Text="{Binding Description}" 
-							HorizontalOptions="Fill"
-							/>
-					</ScrollView>
-
-					<Label 
-						Text="{Binding Manufacturer, StringFormat='BY {0:F0}'}}"
-						FontSize ="12"
-						HorizontalOptions="Fill"
-						TextColor="#37474f"
-						/>
+                            <ListView.ItemTemplate>
+                                <DataTemplate>
+                                    <ViewCell>
+                                        <sample:FriendItemTemplate />
+                                    </ViewCell>
+                                </DataTemplate>
+                            </ListView.ItemTemplate>
+                        </ListView>
 
 				</StackLayout>
 
 			</StackLayout>
 
-			<!---BUY BUTTON -->
-			<Grid Padding="20,10,20,10" Grid.Row="2">
-				<artina:Button 
-					Style="{DynamicResource PrimaryActionButtonStyle}" 
-					Text="Add to cart" 
-					/>
-			</Grid>
+		
 		</Grid>	
 
 </ContentPage>

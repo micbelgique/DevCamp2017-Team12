@@ -7,13 +7,13 @@ namespace UXDivers.Artina.Grial
 	{
 		public static UIColor AccentColor = ExportedColors.AccentColor.ToUIColor();
 		public static UIColor TextColor = ExportedColors.InverseTextColor.ToUIColor();
-
+        public static UIColor InverseTextColor = ExportedColors.InverseTextColor.ToUIColor();
 		public static void Configure()
 		{
-			UINavigationBar.Appearance.BarTintColor = AccentColor;
-			UINavigationBar.Appearance.TintColor = TextColor;
+			UINavigationBar.Appearance.BarTintColor = InverseTextColor;
+			UINavigationBar.Appearance.TintColor = AccentColor;
 			UINavigationBar.Appearance.TitleTextAttributes = new UIStringAttributes {
-				ForegroundColor = TextColor,
+                ForegroundColor = AccentColor,
 			};
 
 			UIProgressView.Appearance.ProgressTintColor = AccentColor;

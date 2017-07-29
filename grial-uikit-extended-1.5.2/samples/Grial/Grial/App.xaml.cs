@@ -22,7 +22,8 @@ namespace UXDivers.Artina.Grial
 			
 		public static Page GetMainPage()
 		{
-			return new RootPage(true);
+            //return new RootPage(true);
+            return new LoginPage();
 		}
 	}
 }

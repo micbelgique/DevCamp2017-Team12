@@ -25,26 +25,11 @@
 			</Grid.RowDefinitions>
 
 			<!-- LOGO -->
-			<commonViews:BrandBlock 
+            <commonViews:BrandBlock 
 				Grid.Row="0"
 			/>
 
-			<!-- CLOSE ICON -->
-			<Label 
-				Style="{DynamicResource IconCloseLabelStyle}" 
-				HorizontalOptions="End"
-				VerticalOptions="Start"
-				TranslationX="-20"
-				TranslationY="20"
-				Grid.Row="0"
-			>
-				<Label.GestureRecognizers>
-					<TapGestureRecognizer Tapped="OnCloseButtonClicked" />
-				</Label.GestureRecognizers>
-			</Label>
-
-
-			<!---FIELDS CONTAINER-->
+            <!---FIELDS CONTAINER-->
 			<Grid 
 				Padding="40, 0"
 				ColumnSpacing="0" 

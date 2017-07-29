@@ -3,7 +3,7 @@
 <plist version="1.0">
 <dict>
 	<key>CFBundleIdentifier</key>
-	<string>com.uxdivers.grial</string>
+	<string>com.skygate.Idme</string>
 	<key>CFBundleShortVersionString</key>
 	<string>1.0</string>
 	<key>CFBundleVersion</key>
@@ -56,5 +56,7 @@
 			</dict>
 		</dict>
 	</dict>
+	<key>CFBundleName</key>
+	<string>Grial</string>
 </dict>
 </plist>

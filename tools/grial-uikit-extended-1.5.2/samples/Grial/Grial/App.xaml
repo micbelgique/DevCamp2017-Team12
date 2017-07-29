@@ -22,7 +22,7 @@
 				to see your changes on your App
 			-->
 			<!-- Export AccentColor -->
-			<Color x:Key="AccentColor">#FFDA125F</Color>
+			<Color x:Key="AccentColor">#0071B0</Color>
 			<!-- Export InverseTextColor -->
 			<Color x:Key="InverseTextColor">White</Color>
 
@@ -30,7 +30,7 @@
 
 
 			<!-- COLORS -->
-			<Color x:Key="BrandColor">#ad1457</Color>
+			<Color x:Key="BrandColor">#9BAFC1</Color>
 			<Color x:Key="BrandColorLight">#ec407a</Color>
 			<Color x:Key="BrandColorLighter">#f06292</Color>
 			<Color x:Key="BrandColorDark">#c2185b</Color>
@@ -499,17 +499,28 @@
 				<Setter Property="BackgroundColor" Value="{StaticResource BrandColorDarker}" />
 			</Style>
 
-			<!-- CUSTOM NAVBAR -->
-			<Style x:Key="CustomNavBarStyle" TargetType="StackLayout">
-				<Setter Property="BackgroundColor" Value="{StaticResource AccentColor}" />
-				<Setter Property="HeightRequest">
-					<Setter.Value>
-						<OnPlatform x:TypeArguments="x:Double" 
-							Android="56" 
-							iOS="66" />
-					</Setter.Value>
-				</Setter>
-			</Style>
+                <!-- CUSTOM NAVBAR -->
+            <Style x:Key="CustomNavBarStyle" TargetType="StackLayout">
+                <Setter Property="BackgroundColor" Value="White" />
+                <Setter Property="HeightRequest">
+                    <Setter.Value>
+                        <OnPlatform x:TypeArguments="x:Double" 
+                            Android="56" 
+                            iOS="66" />
+                    </Setter.Value>
+                </Setter>
+            </Style>
+            <!--  NAVBARTCSTYLE -->
+            <Style x:Key="NavBarTCStyle" TargetType="StackLayout">
+                <Setter Property="BackgroundColor" Value="White" />
+                <Setter Property="HeightRequest">
+                    <Setter.Value>
+                        <OnPlatform x:TypeArguments="x:Double" 
+                            Android="45" 
+                            iOS="50" />
+                    </Setter.Value>
+                </Setter>
+            </Style>
 		</ResourceDictionary>
 	</Application.Resources>
 </Application>

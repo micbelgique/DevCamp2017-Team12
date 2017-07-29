@@ -13,6 +13,7 @@ namespace UXDivers.Artina.Grial
 
 		public App ()
 		{
+			
 			InitializeComponent ();
 
 			MainPage = GetMainPage();

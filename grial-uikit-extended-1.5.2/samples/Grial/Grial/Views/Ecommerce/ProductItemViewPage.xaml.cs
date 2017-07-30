@@ -19,6 +19,11 @@ namespace UXDivers.Artina.Grial
 
 			await Navigation.PushModalAsync( new NavigationPage( imagePreview ) );
 		}
-	}
+
+        void Handle_ItemTapped(object sender, Xamarin.Forms.ItemTappedEventArgs e)
+        {
+            DisplayAlert((e.Item as DemandeInfo).autorite, (e.Item as DemandeInfo).date + "\n" + (e.Item as DemandeInfo).raison,"OK");
+        }
+    }
 }
 

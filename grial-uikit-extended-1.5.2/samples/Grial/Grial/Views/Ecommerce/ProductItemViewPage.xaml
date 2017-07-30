@@ -90,7 +90,7 @@
                             RowHeight="66" 
                             x:Name="ConsultationsList"
                     ItemsSource="{Binding Consultations}" 
-                             >
+                    ItemTapped="Handle_ItemTapped"               >
 
                             <ListView.ItemTemplate>
                                 <DataTemplate>

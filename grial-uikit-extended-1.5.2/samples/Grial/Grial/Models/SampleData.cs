@@ -311,54 +311,145 @@ namespace UXDivers.Artina.Grial
 			),
 		};
 
+        public static List<DemandeInfo> ConsultationsVoiture = new List<DemandeInfo>{
 
-		public static List <Product> Products = new List<Product> {
-			new Product {
-				Name 			= "Données Personnelles",
-				Description 	= "Cotton/ploy blend lends for ultimate comfort.",
-				Image 			= SampleData.ProductsImagesList[0],
-				Price 			= "$39",
-				ThumbnailHeight  = "100"
+            new DemandeInfo ("Police", "Le véhicule roulait sur deux roues","30/07/2017"),
+
+			new DemandeInfo ("SPF", "La puissance du véhicule est trop puissante par rapport au salaire du propriétaire ","04/02/2004"),
+
+
+			new DemandeInfo ("Police", "Dépassement de la vitesse autorisée","20/12/2012"),
+
+            new DemandeInfo ("Police", "Stationnement non autorisé","10/11/2012"),
+
+
+          
+        };
+
+		public static List<DemandeInfo> ConsultationsHabitat = new List<DemandeInfo>{
+
+
+
+			new DemandeInfo ("SPF", "Modifications non déclarées de la structure d'habitat","04/02/2016"),
+
+			new DemandeInfo ("Police", "Consommation d'éléctricité trop importante","10/11/2012")
+
+		};
+
+       
+
+		public static List<DemandeInfo> ConsultationsPersonal = new List<DemandeInfo>{
+
+
+
+			new DemandeInfo ("Commune", "Expirtion de la carte d'identité","04/02/2004"),
+
+			new DemandeInfo ("Police", "Verrification des données de la personne suite à un contrôle ","10/11/2012"),
+
+		};
+
+		public static List<DemandeInfo> ConsultationsFamille = new List<DemandeInfo>{
+
+
+
+			new DemandeInfo ("Commune", "Mise à jour de la composition de ménage","04/02/2004"),
+
+			new DemandeInfo ("Police", "L'école a rapporté un taux d'abscentéisme trop important des enfants.","10/11/2012"),
+
+			new DemandeInfo ("SPF", "Un nombre souspicieux d'enfants a été déclaré","10/11/2012")
+		};
+
+		public static List<DemandeInfo> ConsultationsSanté = new List<DemandeInfo>{
+
+
+
+			new DemandeInfo ("SPF", "Vérificaiton suite à des congés maladie","04/02/2004"),
+
+			new DemandeInfo ("Mutuelle", "Vérification des raisons du congé maladie","10/11/2012")
+
+		};
+		public static List<DemandeInfo> ConsultationsFinance = new List<DemandeInfo>{
+
+
+
+			new DemandeInfo ("SPF", "Vérification du statut actuel","04/02/2004"),
+
+			new DemandeInfo ("SPF", "Vérification des rémunérations versées","10/11/2012"),
+
+			new DemandeInfo ("SPF", "Vérification du compte bancaire","10/11/2012")
+
+
+		};
+
+
+
+
+
+
+        public static List<Product> Products = new List<Product> {
+            new Product {
+                Name            = "Données personnelles",
+                Description     = "Cotton/ploy blend lends for ultimate comfort.",
+                Image           = SampleData.ProductsImagesList[0],
+                Price           = "$39",
+                ThumbnailHeight  = "100",
+                Consultations = ConsultationsPersonal,
+                Personne = new Personne()
+            },
+
+            new Product {
+                Name            = "Ma famille",
+                Description     = "This Logo UA Tech T-Shirt is built with a system that wicks away sweat to keep your little one dry and comfortable.",
+                Image           = SampleData.ProductsImagesList[1],
+                Price           = "$29",
+                ThumbnailHeight  = "100",
+                Consultations = ConsultationsFamille
+
+
+			},
+
+            new Product {
+                Name            = "Mon salaire",
+                Description     = "The V-Neck Embroidered T-Shirt keeps you looking fresh with its simple yet classic look. 100% cotton. Imported.",
+                Image           = SampleData.ProductsImagesList[2],
+                Price           = "$39",
+                ThumbnailHeight  = "100",
+                Consultations = ConsultationsFinance
+
+
+			},
+
+            new Product {
+                Name            = "Mon habitat",
+                Description     = "Our newest swim tees with a much looser fit than traditional rash guard for yet more comfort and versatility, is well known for great fit, function and colors.",
+                Image           = SampleData.ProductsImagesList[3],
+                Price           = "$29",
+                ThumbnailHeight  = "100",
+                Consultations = ConsultationsHabitat
+
+
+
+			},
+
+            new Product {
+                Name            = "Ma voiture",
+                Description     = "Standard fit tee shirt, graphic printed with soft hand ink",
+                Image           = SampleData.ProductsImagesList[4],
+                Price           = "$29",
+                ThumbnailHeight = "100",
+                Consultations = ConsultationsVoiture
+
 			},
 
 			new Product {
-				Name 			= "Ma famille",
-				Description 	= "This Logo UA Tech T-Shirt is built with a system that wicks away sweat to keep your little one dry and comfortable.",
-				Image 			= SampleData.ProductsImagesList[1],
-				Price 			= "$29",
-				ThumbnailHeight  = "100"
-			},
-
-			new Product {
-				Name 			= "Mon salaire",
-				Description 	= "The V-Neck Embroidered T-Shirt keeps you looking fresh with its simple yet classic look. 100% cotton. Imported.",
-				Image 			= SampleData.ProductsImagesList[2],
-				Price 			= "$39",
-				ThumbnailHeight  = "100"
-			},
-
-			new Product {
-				Name 			= "Mon Habitat",
-				Description 	= "Our newest swim tees with a much looser fit than traditional rash guard for yet more comfort and versatility, is well known for great fit, function and colors.",
-				Image 			= SampleData.ProductsImagesList[3],
-				Price 			= "$29",
-				ThumbnailHeight  = "100"
-			},
-
-			new Product {
-				Name 			= "My car",
-				Description 	= "Standard fit tee shirt, graphic printed with soft hand ink",
-				Image 			= SampleData.ProductsImagesList[4],
-				Price 			= "$29",
-				ThumbnailHeight = "100"
-			},
-
-			new Product {
-				Name 			= "My Health",
+				Name 			= "Ma santé",
 				Description 	= "Comfortable fit whilst the flat-seam construction helps to minimise chafing and they also feature side panels, enhancing your range of movement.",
 				Image 			= SampleData.ProductsImagesList[5],
 				Price 			= "$39",
-				ThumbnailHeight  = "100"
+				ThumbnailHeight  = "100",
+                Consultations = ConsultationsSanté
+
+
 			} 
 		};
 	}

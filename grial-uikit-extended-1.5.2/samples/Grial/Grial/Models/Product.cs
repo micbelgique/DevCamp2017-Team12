@@ -1,10 +1,15 @@
 ﻿using System;
+using System.Collections.Generic;
 
 namespace UXDivers.Artina.Grial
 {
 	public class Product
 	{
-		public string Name {
+        public List<DemandeInfo> Consultations { get; set; }
+
+
+
+        public string Name {
 			get;
 			set;
 		}
@@ -33,8 +38,9 @@ namespace UXDivers.Artina.Grial
 			get;
 			set;
 		}
+        public Personne Personne { get; internal set; }
 
-		public Product ()
+        public Product ()
 		{
 		}
 	}

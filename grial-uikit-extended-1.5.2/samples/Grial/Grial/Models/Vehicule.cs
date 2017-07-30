@@ -34,7 +34,6 @@ namespace UXDivers.Artina.Grial
 			typeDeCarburant = "essance";
 			annéeDeConstruction = datePremiereImmatriculation;
 
-			this.proprio.vehicules.Add(this);
 		}
 
 		String getImmatriculation()
@@ -51,7 +50,6 @@ namespace UXDivers.Artina.Grial
 
 		public Personne consulterProprio(DemandeInfo demande)
 		{
-			proprio.consulter(demande);
 			return proprio;
 		}
 	}

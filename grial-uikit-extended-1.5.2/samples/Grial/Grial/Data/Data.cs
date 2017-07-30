@@ -11,7 +11,7 @@ namespace UXDivers.Artina.Grial
 			AutoritesPublique police = new AutoritesPublique();
 			police.nom = "Police";
 
-			maVoiture.consulterProprio(new DemandeInfo(police, "Le véhicule était sur deux roues"));
+			maVoiture.consulterProprio(new DemandeInfo("police", "Le véhicule était sur deux roues","XXXXXX"));
 
 			//			var xx = moi.consulterVehicules(new DemandeInfo(police, "Le véhicule était sur deux roues"));
 

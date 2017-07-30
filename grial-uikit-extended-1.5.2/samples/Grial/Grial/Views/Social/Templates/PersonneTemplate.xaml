@@ -2,7 +2,7 @@
 <ContentView 
 	xmlns="http://xamarin.com/schemas/2014/forms" 
 	xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
-	x:Class="UXDivers.Artina.Grial.FriendItemTemplate"
+	x:Class="UXDivers.Artina.Grial.PersonneTemplate"
 	xmlns:artina="clr-namespace:UXDivers.Artina.Shared;assembly=UXDivers.Artina.Shared">
 
 	<StackLayout Orientation="Horizontal"
@@ -12,11 +12,7 @@
             Text="{ Binding autorite }" 
             FontAttributes = "Bold"
             VerticalOptions="CenterAndExpand" />
-		<Label
-            HorizontalOptions='EndAndExpand'
-			Text="{ Binding date }" 
-            
-			VerticalOptions="CenterAndExpand" />
+		
 	</StackLayout>
 </ContentView>
 

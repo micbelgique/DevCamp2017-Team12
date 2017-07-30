@@ -7,23 +7,18 @@ namespace UXDivers.Artina.Grial
 		public string nom { get; set; }
 		public string prenom { get; set; }
 		public string numRegistreNationnal { get; set; }
-		public Statut statut { get; set; }
+		public string statut { get; set; }
 		public string adresse { get; set; }
-		public DateTime dateNaissance { get; set; }
-		public Famille famille { get; set; }
-		public List<Vehicule> vehicules { get; set; }
-		public Stack<DemandeInfo> demandes { get; set; }
+		public string dateNaissance { get; set; }
+	
 		public Personne()
 		{
 			nom = "Bonbeur";
 			prenom = "Jean";
 			numRegistreNationnal = "90012345678";
-			statut = Statut.Marié;
+			statut = "Marié";
 			adresse = "Avenue Léopole n°42, 1000 Bruxelles";
-			dateNaissance = new DateTime(1990, 01, 23);
-			vehicules = new List<Vehicule>();
-			demandes = new Stack<DemandeInfo>();
-			famille = new Famille();
+			dateNaissance = "16/09/1991";
 
 		}
 
@@ -34,15 +29,8 @@ namespace UXDivers.Artina.Grial
 		}
 
 
-		public void consulter(DemandeInfo demande)
-		{
-			demandes.Push(demande);
-		}
-		public List<Vehicule> consulterVehicules(DemandeInfo demande)
-		{
-			demandes.Push(demande);
-			return vehicules;
-		}
+	
+		
 	}
 	public enum Statut
 	{

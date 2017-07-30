@@ -8,12 +8,15 @@ namespace UXDivers.Artina.Grial
 	{
 		private const uint animationDuration = 100;
 
+        public Product product;
+
 		public ProductImageFullScreenPage ( Product product )
 		{
 			InitializeComponent ();
 			NavigationPage.SetHasNavigationBar( this, false );
-           
-		}
+
+            BindingContext = product;
+        }
 
 	
 		

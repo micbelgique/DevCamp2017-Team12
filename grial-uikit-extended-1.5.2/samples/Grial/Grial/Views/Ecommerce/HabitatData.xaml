@@ -2,7 +2,7 @@
 <ContentPage 
 	xmlns="http://xamarin.com/schemas/2014/forms" 
 	xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
-	x:Class="UXDivers.Artina.Grial.VoitureData">
+	x:Class="UXDivers.Artina.Grial.HabitatData">
     <ScrollView>
 
         <AbsoluteLayout>
@@ -15,41 +15,22 @@
                 </StackLayout>
                 
                 <StackLayout Orientation="Vertical" Padding="10">
-                    <Label TextColor="{ StaticResource AccentColor }" Text="Immatricule" FontAttributes = "Bold" VerticalOptions="CenterAndExpand" />
-                    <Label   Text="DGE-546" VerticalOptions="CenterAndExpand" />
+                    <Label TextColor="{ StaticResource AccentColor }" Text="Adresse" FontAttributes = "Bold" VerticalOptions="CenterAndExpand" />
+                    <Label   Text="Avenue Léopole n°42, 1000 Bruxelles" VerticalOptions="CenterAndExpand" />
                 </StackLayout>
 
 
                 <StackLayout Orientation="Vertical" Padding="10">
-                    <Label TextColor="{ StaticResource AccentColor }" Text="Date première immatriculation" FontAttributes = "Bold" VerticalOptions="CenterAndExpand" />
-                    <Label   Text="02/04/2000" VerticalOptions="CenterAndExpand" />
+                    <Label TextColor="{ StaticResource AccentColor }" Text="Type du bien" FontAttributes = "Bold" VerticalOptions="CenterAndExpand" />
+                    <Label   Text="Maison" VerticalOptions="CenterAndExpand" />
                 </StackLayout>
 
 
-
-                <StackLayout Orientation="Vertical" Padding="10">
-                    <Label TextColor="{ StaticResource AccentColor }" Text="Constructeur" FontAttributes = "Bold" VerticalOptions="CenterAndExpand" />
-                    <Label   Text="Ford" VerticalOptions="CenterAndExpand" />
-                </StackLayout>
-
-
-
-                <StackLayout Orientation="Vertical" Padding="10">
-                    <Label TextColor="{ StaticResource AccentColor }" Text="Cylindrée" FontAttributes = "Bold" VerticalOptions="CenterAndExpand" />
-                    <Label   Text="2.0L" VerticalOptions="CenterAndExpand" />
-                </StackLayout>
-
-
-                <StackLayout Orientation="Vertical" Padding="10">
-                    <Label TextColor="{ StaticResource AccentColor }" Text="Carburant" FontAttributes = "Bold" VerticalOptions="CenterAndExpand" />
-                    <Label   Text="Essence" VerticalOptions="CenterAndExpand" />
-                </StackLayout>
 
                 <StackLayout Orientation="Vertical" Padding="10">
                     <Label TextColor="{ StaticResource AccentColor }" Text="Année de construction" FontAttributes = "Bold" VerticalOptions="CenterAndExpand" />
-                    <Label   Text="2010" VerticalOptions="CenterAndExpand" />
+                    <Label   Text="1989" VerticalOptions="CenterAndExpand" />
                 </StackLayout>
-
 
 
             </StackLayout>

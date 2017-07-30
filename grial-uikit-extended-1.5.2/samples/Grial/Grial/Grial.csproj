@@ -39,8 +39,17 @@
     <Compile Include="ViewModel\LoginViewModel.cs" />
     <Compile Include="ViewModel\Sample.cs" />
     <Compile Include="ViewModel\SampleCoordinator.cs" />
+    <Compile Include="Views\Ecommerce\SanteData.xaml.cs">
+      <DependentUpon>SanteData.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Ecommerce\SalaireData.xaml.cs">
+      <DependentUpon>SalaireData.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Views\Ecommerce\ProductsGridPage.xaml.cs">
       <DependentUpon>ProductsGridPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Ecommerce\HabitatData.xaml.cs">
+      <DependentUpon>HabitatData.xaml</DependentUpon>
     </Compile>
     <Compile Include="Views\Social\ProfilePage.xaml.cs">
       <DependentUpon>ProfilePage.xaml</DependentUpon>
@@ -479,8 +488,26 @@
     <None Include="Gorilla.json" />
     <None Include="packages.config" />
   </ItemGroup>
-  <ItemGroup />
-  <ItemGroup />
-  <ItemGroup />
+  <ItemGroup>
+    <EmbeddedResource Include="Views\Ecommerce\HabitatData.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+      <SubType>
+      </SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Views\Ecommerce\SalaireData.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+      <SubType>
+      </SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Views\Ecommerce\SanteData.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+      <SubType>
+      </SubType>
+    </EmbeddedResource>
+  </ItemGroup>
   <Import Project="..\packages\Xamarin.Forms.2.3.4.247\build\portable-win+net45+wp80+win81+wpa81+MonoAndroid10+Xamarin.iOS10+xamarinmac20\Xamarin.Forms.targets" Condition="Exists('..\packages\Xamarin.Forms.2.3.4.247\build\portable-win+net45+wp80+win81+wpa81+MonoAndroid10+Xamarin.iOS10+xamarinmac20\Xamarin.Forms.targets')" />
 </Project>

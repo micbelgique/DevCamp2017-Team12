@@ -59,12 +59,12 @@ namespace UXDivers.Artina.Grial
 		};
 
 		public static List<string> ProductsImagesList = new List<string>() { 
-			"product_item_0.jpg",
-			"product_item_1.jpg",
-			"product_item_2.jpg",
-			"product_item_3.jpg",
-			"product_item_4.jpg",
-			"product_item_5.jpg",
+			"Personal.png",
+			"Family.png",
+			"Money.png",
+			"House.png",
+			"Car.png",
+			"Health.png",
 			"product_item_6.jpg",
 			"product_item_7.jpg",
 		};
@@ -314,7 +314,7 @@ namespace UXDivers.Artina.Grial
 
 		public static List <Product> Products = new List<Product> {
 			new Product {
-				Name 			= "Logo Tee",
+				Name 			= "Données Personnelles",
 				Description 	= "Cotton/ploy blend lends for ultimate comfort.",
 				Image 			= SampleData.ProductsImagesList[0],
 				Price 			= "$39",
@@ -359,23 +359,7 @@ namespace UXDivers.Artina.Grial
 				Image 			= SampleData.ProductsImagesList[5],
 				Price 			= "$39",
 				ThumbnailHeight  = "100"
-			},
-
-			new Product {
-				Name 			= "Classic T-Shirt",
-				Description 	= "All you need for a comfort day.",
-				Image 			= SampleData.ProductsImagesList[6],
-				Price 			= "$29",
-				ThumbnailHeight = "100"
-			},
-
-			new Product {
-				Name 			= "Product name 8",
-				Description 	= "The long sleeves provide extra coverage and warmth and the sweat-wicking Dri-FIT fabric keeps you comfortable. The lightweight layer contours to your body and strategic mesh panels increase airflow. 92% polyester, 8% spandex.",
-				Image 			= SampleData.ProductsImagesList[7],
-				Price 			= "$29",
-				ThumbnailHeight = "100"
-			}
+			} 
 		};
 	}
 }

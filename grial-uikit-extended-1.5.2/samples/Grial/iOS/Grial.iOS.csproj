@@ -333,6 +333,12 @@
     <BundleResource Include="Resources\tabs0_icon%402x.png" />
     <BundleResource Include="Resources\tabs0_icon%403x.png" />
     <BundleResource Include="Resources\IDMeLogo.png" />
+    <BundleResource Include="Resources\Car.png" />
+    <BundleResource Include="Resources\Family.png" />
+    <BundleResource Include="Resources\Health.png" />
+    <BundleResource Include="Resources\House.png" />
+    <BundleResource Include="Resources\Money.png" />
+    <BundleResource Include="Resources\Personal.png" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Grial\Grial.csproj">

@@ -21,7 +21,7 @@
 		<Image 
 			Grid.Row="0"
 			Source="{Binding Image}" 
-			Aspect="AspectFill" >
+			Aspect="AspectFit" >
 			<Image.GestureRecognizers>
 				<TapGestureRecognizer Tapped="OnImageTapped" />
 			</Image.GestureRecognizers>

@@ -95,6 +95,16 @@
             <x:String x:Key="AboutPageTitle">Made by UXDivers</x:String>
 
             <!-- STATIC IMAGES -->
+
+
+            <FileImageSource x:Key="Family" File="Family.png" />
+            <FileImageSource x:Key="House" File="House.png" />
+            <FileImageSource x:Key="Money" File="Money.png" />
+            <FileImageSource x:Key="Car" File="Car.png" />
+            <FileImageSource x:Key="Health" File="Health.png" />
+            <FileImageSource x:Key="Personal" File="Personal.png" />
+            
+            
             <FileImageSource x:Key="HamburguerIcon" File="hamburguer_icon.png" />
             <FileImageSource x:Key="WelcomeBackgroundImage" File="welcome_bg.jpg" />
             <FileImageSource x:Key="IDMeLogo" File="IDMeLogo.png" />
@@ -342,7 +352,7 @@
 
             <Style x:Key="ArtinaLoginEntryStyle" TargetType="Entry" BasedOn="{ StaticResource LoginEntryStyle }" >
                 <Setter Property="artina:EntryProperties.BorderStyle" Value="BottomLine"/>
-                <Setter Property="artina:EntryProperties.BorderColor" Value="{ StaticResource PlaceholderColorEntry }"/>
+                <Setter Property="artina:EntryProperties.BorderColor" Value="{ StaticResource AccentColor }"/>
                 <Setter Property="artina:EntryProperties.PlaceholderColor" Value="{ StaticResource PlaceholderColorEntry }"/>
                 <Style.Triggers>
                     <Trigger TargetType="Entry"

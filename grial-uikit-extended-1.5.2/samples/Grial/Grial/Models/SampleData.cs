@@ -322,7 +322,7 @@ namespace UXDivers.Artina.Grial
 			},
 
 			new Product {
-				Name 			= "Big Logo Shirt",
+				Name 			= "Ma famille",
 				Description 	= "This Logo UA Tech T-Shirt is built with a system that wicks away sweat to keep your little one dry and comfortable.",
 				Image 			= SampleData.ProductsImagesList[1],
 				Price 			= "$29",
@@ -330,7 +330,7 @@ namespace UXDivers.Artina.Grial
 			},
 
 			new Product {
-				Name 			= "Classic Tee",
+				Name 			= "Mon salaire",
 				Description 	= "The V-Neck Embroidered T-Shirt keeps you looking fresh with its simple yet classic look. 100% cotton. Imported.",
 				Image 			= SampleData.ProductsImagesList[2],
 				Price 			= "$39",
@@ -338,7 +338,7 @@ namespace UXDivers.Artina.Grial
 			},
 
 			new Product {
-				Name 			= "Loose Fit Tee",
+				Name 			= "Mon Habitat",
 				Description 	= "Our newest swim tees with a much looser fit than traditional rash guard for yet more comfort and versatility, is well known for great fit, function and colors.",
 				Image 			= SampleData.ProductsImagesList[3],
 				Price 			= "$29",
@@ -346,7 +346,7 @@ namespace UXDivers.Artina.Grial
 			},
 
 			new Product {
-				Name 			= "Cotton Tee",
+				Name 			= "My car",
 				Description 	= "Standard fit tee shirt, graphic printed with soft hand ink",
 				Image 			= SampleData.ProductsImagesList[4],
 				Price 			= "$29",
@@ -354,7 +354,7 @@ namespace UXDivers.Artina.Grial
 			},
 
 			new Product {
-				Name 			= "Sports Tee",
+				Name 			= "My Health",
 				Description 	= "Comfortable fit whilst the flat-seam construction helps to minimise chafing and they also feature side panels, enhancing your range of movement.",
 				Image 			= SampleData.ProductsImagesList[5],
 				Price 			= "$39",

@@ -15,13 +15,24 @@ namespace UXDivers.Artina.Grial
 		}
 			
 		private async void OnImageTapped(Object sender, EventArgs e){
-            var imagePreview =  new ProductImageFullScreenPage ( (Product)BindingContext);
+			if (((Product)BindingContext).Name == "Ma famille")
+			{
+                var imagePreview =  new FamilleData ( (Product)BindingContext);
+				await Navigation.PushModalAsync(new NavigationPage(imagePreview));
 
-			await Navigation.PushModalAsync( new NavigationPage( imagePreview ) );
+			}else{
+				var imagePreview = new ProductImageFullScreenPage((Product)BindingContext);
+				await Navigation.PushModalAsync(new NavigationPage(imagePreview));
+
+
+			}
+
+			
 		}
 
         void Handle_ItemTapped(object sender, Xamarin.Forms.ItemTappedEventArgs e)
         {
+            
             DisplayAlert((e.Item as DemandeInfo).autorite, (e.Item as DemandeInfo).date + "\n" + (e.Item as DemandeInfo).raison,"OK");
         }
     }

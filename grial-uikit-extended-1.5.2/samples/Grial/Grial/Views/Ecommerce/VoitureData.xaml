@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage 
+	xmlns="http://xamarin.com/schemas/2014/forms" 
+	xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+	x:Class="UXDivers.Artina.Grial.VoitureData">
+    <ScrollView>
+
+        <AbsoluteLayout>
+               
+
+
+            <StackLayout Padding="20" >
+
+                <StackLayout VerticalOptions="Center" HorizontalOptions="Center">
+                    <Label TextColor="{ StaticResource AccentColor }" Text="{Binding Name}" FontSize="Large" FontAttributes = "Bold" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" />
+                </StackLayout>
+                
+                <StackLayout Orientation="Vertical" Padding="10">
+                    <Label TextColor="{ StaticResource AccentColor }" Text="Père" FontAttributes = "Bold" VerticalOptions="CenterAndExpand" />
+                    <Label   Text="Bonbeur Jean , 16/09/1991" VerticalOptions="CenterAndExpand" />
+                </StackLayout>
+
+
+                <StackLayout Orientation="Vertical" Padding="10">
+                    <Label TextColor="{ StaticResource AccentColor }" Text="Mère" FontAttributes = "Bold" VerticalOptions="CenterAndExpand" />
+                    <Label   Text="Bonbeur Valérie , 01/07/1992" VerticalOptions="CenterAndExpand" />
+                </StackLayout>
+
+
+
+                <StackLayout Orientation="Vertical" Padding="10">
+                    <Label TextColor="{ StaticResource AccentColor }" Text="Enfant 1" FontAttributes = "Bold" VerticalOptions="CenterAndExpand" />
+                    <Label   Text="Fille : Bonbeur Christine , 23/1/2016 " VerticalOptions="CenterAndExpand" />
+                </StackLayout>
+
+
+
+                <StackLayout Orientation="Vertical" Padding="10">
+                    <Label TextColor="{ StaticResource AccentColor }" Text="Enfant 2" FontAttributes = "Bold" VerticalOptions="CenterAndExpand" />
+                    <Label   Text="Fils : Bonbeur Stephen , 14/2/2017 " VerticalOptions="CenterAndExpand" />
+                </StackLayout>
+
+
+                <StackLayout Orientation="Vertical" Padding="10">
+                    <Label TextColor="{ StaticResource AccentColor }" Text="Date de naissance" FontAttributes = "Bold" VerticalOptions="CenterAndExpand" />
+                    <Label   Text="16/09/1991" VerticalOptions="CenterAndExpand" />
+                </StackLayout>
+
+
+
+
+            </StackLayout>
+
+            <!--CLOSE ICON-->
+            <StackLayout 
+				Padding="20"
+				HorizontalOptions="End"
+				VerticalOptions="Start"
+				AbsoluteLayout.LayoutBounds="0, 0, 1, .1"
+				AbsoluteLayout.LayoutFlags="All"  >
+
+                <Label
+					FontSize="30"
+					Text="&#xf00d;"
+					HorizontalTextAlignment="End"
+					VerticalTextAlignment="Center"
+					TextColor="{ StaticResource AccentColor }"
+					HeightRequest="30"
+					WidthRequest="30"
+					Style="{StaticResource FontIcon}">
+
+                    <Label.GestureRecognizers>
+                        <TapGestureRecognizer Tapped="OnCloseButtonClicked" />
+                    </Label.GestureRecognizers>
+
+                </Label>
+
+            </StackLayout>
+
+        </AbsoluteLayout>
+
+    </ScrollView>
+</ContentPage>

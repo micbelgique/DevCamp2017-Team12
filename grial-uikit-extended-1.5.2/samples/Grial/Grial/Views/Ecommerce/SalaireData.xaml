@@ -12,12 +12,18 @@
 
                 <StackLayout VerticalOptions="Center" HorizontalOptions="Center">
                     <Label TextColor="{ StaticResource AccentColor }" Text="{Binding Name}" FontSize="Large" FontAttributes = "Bold" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" />
+                </StackLayout> 
+
+                <StackLayout Orientation="Vertical" Padding="10">
+                    <Label TextColor="{ StaticResource AccentColor }" Text="Statut" FontAttributes = "Bold" VerticalOptions="CenterAndExpand" />
+                    <Label   Text="Salarié" VerticalOptions="CenterAndExpand" />
                 </StackLayout>
                 
                 <StackLayout Orientation="Vertical" Padding="10">
                     <Label TextColor="{ StaticResource AccentColor }" Text="Revenu mensuel brut" FontAttributes = "Bold" VerticalOptions="CenterAndExpand" />
                     <Label   Text="3200 €" VerticalOptions="CenterAndExpand" />
                 </StackLayout>
+               
 
 
             </StackLayout>

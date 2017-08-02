@@ -7,7 +7,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Grial", "Grial\Grial.csproj
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Grial.Droid", "Droid\Grial.Droid.csproj", "{B6C3195C-0075-436E-826B-FEF49284DD32}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Grial.iOS", "iOS\Grial.iOS.csproj", "{45DA7B47-C579-4BC1-B1E5-97EEA0C669CD}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IDMe", "iOS\IDMe.csproj", "{45DA7B47-C579-4BC1-B1E5-97EEA0C669CD}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
